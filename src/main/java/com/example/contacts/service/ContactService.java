@@ -20,6 +20,7 @@ public class ContactService {
 
     private ContactDTO convertToDTO(Contact contact){
         ContactDTO contactDTO = new ContactDTO();
+        contactDTO.setId(contact.getContactId());
         contactDTO.setFirstName(contact.getFirstName());
         contactDTO.setLastName(contact.getLastName());
         contactDTO.setPhone(contact.getPhone());
