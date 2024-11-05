@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contacts</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contacts</h1>
+    </header>
+
+    <main>
+        <section id="contact_list">
+            <table id="contact_table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>First name</th>
+                        <th>Last name</th>
+                        <th>Phone</th>
+                        <th>Mail</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody id="contact_table_body">
+
+                </tbody>
+            </table>
+            <button id="previous_button" onclick="previousPage()">Anterior</button>
+            <button id="next_button" onclick="nextPage()">Siguiente</button>
+        </section>
+
+        <section id="new_contact">
+            <h2>Add a new Contact</h2>
+            <form id="contact_form" action="#" method="POST">
+                <label for="name">first name:</label>
+                <input type="text" id="first_name" name="first name" required>
+
+                <label for="name">last name:</label>
+                <input type="text" id="last_name" name="last name" required>
+
+                <label for="phone">phone:</label>
+                <input type="number" id="phone" name="phone" required>
+
+                <label for="email">mail:</label>
+                <input type="email" id="mail" name="mail" required>
+
+                <label for="address">address</label>
+                <input type="text" id="address" name="address" required>
+
+                <button id="submit_contact" type="submit">Add contact</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nicolas Molinas.</p>
+    </footer>
+
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/new_contact.js"></script>
+</body>
+</html>

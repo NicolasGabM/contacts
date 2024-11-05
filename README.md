@@ -91,6 +91,6 @@ Delete a contact by ID
 
 ## To do 
 
-+ Add unit tests with Junit. 
-+ Add a frontend to interact with the api. 
++ Add a frontend to interact with the api.
++ Add unit tests with Junit.  
 + Authentication and authorization with Spring Security and JWT.
