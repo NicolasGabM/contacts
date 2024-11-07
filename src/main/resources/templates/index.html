@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Contacts</h1>
+        <h1>Contacts_</h1>
     </header>
 
     <main>
@@ -23,35 +23,61 @@
                         <th>Phone</th>
                         <th>Mail</th>
                         <th>Address</th>
+                        <th>Delete</th>
                     </tr>
                 </thead>
                 <tbody id="contact_table_body">
 
                 </tbody>
             </table>
-            <button id="previous_button" onclick="previousPage()">Anterior</button>
-            <button id="next_button" onclick="nextPage()">Siguiente</button>
+            <div id="contact_table_buttons">
+                <button class="nav_button" id="previous_button" onclick="previousPage()">&#8592; Previous</button>
+                <button class="nav_button" id="next_button" onclick="nextPage()">&#8594; Next</button>
+            </div>
         </section>
 
         <section id="new_contact">
             <h2>Add a new Contact</h2>
             <form id="contact_form" action="#" method="POST">
-                <label for="name">first name:</label>
+                <label for="name"><h3>first name</h3></label>
                 <input type="text" id="first_name" name="first name" required>
 
-                <label for="name">last name:</label>
+                <label for="name"><h3>last name</h3></label>
                 <input type="text" id="last_name" name="last name" required>
 
-                <label for="phone">phone:</label>
+                <label for="phone"><h3>phone</h3></label>
                 <input type="number" id="phone" name="phone" required>
 
-                <label for="email">mail:</label>
+                <label for="email"><h3>mail</h3></label>
                 <input type="email" id="mail" name="mail" required>
 
-                <label for="address">address</label>
+                <label for="address"><h3>address</h3></label>
                 <input type="text" id="address" name="address" required>
 
-                <button id="submit_contact" type="submit">Add contact</button>
+                <button class="submit_button" id="submit_contact" type="submit">Add contact</button>
+            </form>
+
+            <h2>Update a contact</h2>
+            <form id="update_form" action="#" method="PUT">
+                <label for="contact_id"><h3>ID</h3></label>
+                <input type="number" id="contact_id" name="contact_id" required>
+
+                <label for="name"><h3>first name</h3></label>
+                <input type="text" id="update_first_name" name="first name" required>
+
+                <label for="name"><h3>last name</h3></label>
+                <input type="text" id="update_last_name" name="last name" required>
+
+                <label for="phone"><h3>phone</h3></label>
+                <input type="number" id="update_phone" name="phone" required>
+
+                <label for="email"><h3>mail</h3></label>
+                <input type="email" id="update_mail" name="mail" required>
+
+                <label for="address"><h3>address</h3></label>
+                <input type="text" id="update_address" name="address" required>
+
+                <button class="submit_button" id="update_contact" type="submit">Update</button>
             </form>
         </section>
     </main>
@@ -61,6 +87,5 @@
     </footer>
 
     <script src="/scripts/script.js"></script>
-    <script src="/scripts/new_contact.js"></script>
 </body>
 </html>

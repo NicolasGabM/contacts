@@ -1,46 +1,103 @@
 body{
+    color: white;
+    background-color: #000000d0;
+    font-family: Arial, sans-serif; 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     flex-direction: column;
-    margin: 20px;
-    font-family: Arial, sans-serif; 
+    min-height: 100vh;      
+    margin: 0;
+}
+#contact_list{
+    margin-top: 20px;
+}
+#contact_table{
+    width: 950px;
+    height: 350px;
+    table-layout: fixed;
+    border-collapse: separate;
+}
+#contact_table th,#contact_table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+    overflow: hidden;          
+    text-overflow: ellipsis;   
+    white-space: nowrap;     
+   
+}
+
+#contact_table th:nth-child(1),
+#contact_table td:nth-child(1) {
+    width: 20px;               
+}
+#contact_table th:nth-child(2),
+#contact_table td:nth-child(2) {
+    width: 100px;               
+}
+#contact_table th:nth-child(3),
+#contact_table td:nth-child(3) {
+    width: 100px;               
+}
+h1{
+    margin-left: 50px;
+}
+header{
+    background-color: rgb(21, 44, 255);
+    width: 100%;
+}
+#contact_table th:nth-child(7),
+#contact_table td:nth-child(7) {
+    width: 50px; 
+    padding: 0;         
+    text-overflow:unset;      
+}
+.acction_button{
+    width: 50%; 
+    height: 80%;    
+    border: none; 
+}
+#delete:hover{
+    background-color: red;
+}
+
+#contact_table_buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+button:focus {
+    outline: none;
+}
+.nav_button{
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+.nav_button:hover{
+    background-color: yellow;
+}
+
+form{
+    margin: 10px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 input{
     width: 100%;
     height: 25px;
-    margin-bottom: 15px;
+    margin: 0 auto;
     display: block;
 }
-
-h2{
-    text-align: center;
+.submit_button{
+    height: 30px;
+    width: 100px;
+    margin: 30px auto;
 }
-
-#submit_contact{
-    height: 25px;
-}
-
-#submit_contact:hover{
+.submit_button:hover{
     background-color: rgb(57, 248, 57);
 }
 
-#contact_form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-
-th, td {
-    padding: 8px;
-    border: 1px solid #ddd;
-    text-align: center;
-    overflow:hidden;
-    word-wrap:break-word;
-}
-
-footer{
-    margin-top: 20px;
-}

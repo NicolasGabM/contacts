@@ -98,32 +98,4 @@ public class ContactController {
         return ResponseEntity.noContent().build();
     }
 
-
-
-/*
-    @GetMapping("/")
-    public List<Contact> listContacts(){
-        return contactService.findAll();
-    }
-    @GetMapping("/{id}")
-    public Contact getById(@PathVariable Long id){
-        return contactService.findByIdContact(id);
-    }
-    @PostMapping("/")
-    public Contact createContact(@RequestBody Contact contact){
-        return contactService.saveContact(contact);
-    }
-
-    @DeleteMapping("/{id}")
-    public String deleteContact(@PathVariable Long id){
-        contactService.deleteContact(id);
-        return "contact with id "+id+" was deleted";
-    }
-
-    @PutMapping("/{id}")
-    public Contact updateContact(@PathVariable Long id, @RequestBody Contact contact){
-        return contactService.updateContact(id,contact);
-    }
-
- */
 }
